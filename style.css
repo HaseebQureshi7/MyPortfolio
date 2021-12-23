@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+html {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.loadinganimation{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.loadinganimation img {
+    margin-top: 25vh;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 2em;
+}
+
+.nav ul li {
+    margin: 2em;
+    list-style-type: none;
+}
+
+.intro, .intro2 {
+    width: 40%;
+}
+
+.intro h1, .intro2 h1{
+    text-align: left;
+    font-size: 4em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.intro h5 {
+    float: right;
+    color: rgb(0, 195, 255);
+}
+
+.date {
+    margin: 10vh;
+    width: 50%;
+}
+
+.date h1{
+    font-size: 5em;
+}
+
+.date h2 {
+    font-size: 3em;
+}
+
+.date h5 {
+    font-size: 1.5em;
+}
+
+.main {    
+    margin: 1em;
+    float: right;
+    border: solid white;
+    width: 25%;
+    border-radius: 50vh;
+
+}
+
+.sub {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.detail {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.container2 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.intro2 {
+    margin-top: 10vh;
+}
+
+.detail2 {
+    margin-top: 5vh;
+    margin-left: 10vh;
+    width: 30%;
+}
+
+.skills{
+    margin-left: 2em;
+    /* float: right; */
+}
+
+.skills .heading {
+    margin: 1em;
+    font-size: 2em;
+}
+
+.skills ul{
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+    width: 50%;
+    list-style-type: none;
+}
+.skills ul li {
+    margin: 1em;
+    margin-left: 4em;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.projects div {
+    width: 75%;
+    height: 20vh;
+    background-color: white;
+    margin: 2.5em;
+}
+
+.projects div h1 {
+    padding: 1.5em;
+    background-color: white;
+    
+    color: black;
+}
+
+.projects div img {
+    background-color: white;
+    float: right;
+    width: 8vh;
+    height: auto;
+}
+
+.moreprojs {
+    margin-top: 5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.moreprojs img {
+    margin: 2em;
+    width: 50vh;
+    filter: invert();
+    background-color: white;
+    animation: blimp 1.5s alternate infinite ;
+    cursor: pointer;
+}
+
+@keyframes blimp {
+    0%{
+    transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+    transform: scale(1);
+    }
+}
+
+.backhome {
+    float: right;
+    margin-top: 4em;
+    margin-right: 20em;
+    color: white;
+    cursor: pointer;
+}
+
+.backhome:hover {
+    transform: scale(1.25);
+    filter:brightness(200%);
+    transition: .5s;
+}
+.backhome:not(:hover){
+    transform: scale(1);
+    transition: .5s;
+
+}
+
+ul li{
+    cursor: pointer;
+}
+
+ul li:hover {
+    transform: scale(1.25);
+    filter:brightness(200%);
+    transition: .4s;
+}
+ul li:not(:hover){
+    transform: scale(1);
+    transition: .4s;
+
+}
+
+
+.contactlinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    width: 100%;
+    background-color: white;
+}
+
+.contactlinks img {
+    background-color: white;
+    margin: 2em;
+    width: 2.5em;
+    cursor: pointer;
+    animation: blimp 1s alternate 2s;
+}
+
+.call {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 2em;
+}
+
+.call h6{
+    font-size: .5em;
+}
